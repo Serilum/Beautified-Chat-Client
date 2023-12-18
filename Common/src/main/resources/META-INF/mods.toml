@@ -1,14 +1,14 @@
 modLoader="javafml"
 loaderVersion="*"
 license="All rights reserved"
-issueTrackerURL="https://github.com/ricksouth/serilum-mc-mods/labels/Mod:%20Beautified%20Chat%20Client"
+issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Beautified%20Chat%20Client"
 logoFile="icon.png"
 
 [[mods]]
 modId="beautifiedchatclient"
-version="2.3"
+version="2.4"
 displayName="Beautified Chat Client"
-displayURL="https://curseforge.com/minecraft/mc-mods/beautified-chat-client"
+displayURL="https://serilum.com/mod/beautified-chat-client"
 authors="Rick South"
 description='''A highly configurable mod to change the style and colour of incoming chat messages on the client.
 '''
@@ -21,13 +21,15 @@ If you would like to contribute too, check out https://ricksouth.com/donate. App
 
 [[dependencies.beautifiedchatclient]]
     modId="collective"
+    type="required"
     mandatory=true
-    versionRange="[7.3,)"
+    versionRange="[7.21,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.beautifiedchatclient]]
     modId="minecraft"
+    type="required"
     mandatory=true
     versionRange="[1.20.1]"
     ordering="NONE"
