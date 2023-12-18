@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "id": "beautifiedchatclient",
-  "version": "2.3",
+  "version": "2.4",
 
   "name": "Beautified Chat Client",
   "description": "A highly configurable mod to change the style and colour of incoming chat messages on the client.",
   "authors": [ "Rick South" ],
   "contact": {
-    "homepage": "https://curseforge.com/minecraft/mc-mods/beautified-chat-client",
-    "sources": "https://github.com/ricksouth/serilum-mc-mod-sources/tree/main/sources/Beautified%20Chat%20Client",
-    "issues": "https://github.com/ricksouth/serilum-mc-mods/labels/Mod:%20Beautified%20Chat%20Client"
+    "homepage": "https://serilum.com/mod/beautified-chat-client",
+    "sources": "https://github.com/Serilum/Beautified-Chat-Client",
+    "issues": "https://github.com/Serilum/.issue-tracker/labels/Mod:%20Beautified%20Chat%20Client"
   },
 
   "license": "All Right Reserved",
@@ -23,7 +23,7 @@
     "fabric": "*",
     "minecraft": ">=1.20",
     "java": ">=17",
-    "collective": ">=7.3"
+    "collective": ">=7.21"
   },
 
   "custom": {
