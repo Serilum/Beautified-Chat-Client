@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion="*"
+license="All rights reserved"
+issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Beautified%20Chat%20Client"
+logoFile="icon.png"
+
+[[mods]]
+modId="beautifiedchatclient"
+version="2.4"
+displayName="Beautified Chat Client"
+displayURL="https://serilum.com/mod/beautified-chat-client"
+authors="Rick South"
+description='''A highly configurable mod to change the style and colour of incoming chat messages on the client.
+'''
+credits='''Thank you very much to my Membership sponsors for supporting the development of this mod:  
+
+Alister, Andrean Olgo, aternosorg, BirdieMiner, Cherriesaurus, Jack, Jeremy Langford, Michael W. S., pepe1191, Shana Gitnick, Tyler Behl   
+
+If you would like to contribute too, check out https://serilum.com/donate. Appreciate it! <3   
+'''
+
+[[dependencies.beautifiedchatclient]]
+    modId="collective"
+    type="required"
+    versionRange="[7.55,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.beautifiedchatclient]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.20.6]"
+    ordering="NONE"
+    side="BOTH"
+
+[[mixins]]
+    config = "beautifiedchatclient.mixins.json"
