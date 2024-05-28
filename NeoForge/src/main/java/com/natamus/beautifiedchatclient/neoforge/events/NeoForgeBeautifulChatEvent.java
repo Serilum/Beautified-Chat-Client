@@ -14,7 +14,7 @@ public class NeoForgeBeautifulChatEvent {
 	@SubscribeEvent
 	public static void onClientChat(ClientChatReceivedEvent e) {
 		Component originalMessage = e.getMessage();
-		Component newMessage = BeautifulChatEvent.onClientChat(e.getBoundChatType().chatType().value(), e.getMessage(), e.getSender());
+		Component newMessage = BeautifulChatEvent.onClientChat(null, e.getMessage(), e.getSender());
 		
 		if (originalMessage != newMessage) {
 			e.setMessage(newMessage);
