@@ -14,7 +14,7 @@ public class ForgeBeautifulChatEvent {
 	@SubscribeEvent
 	public void onClientChat(ClientChatReceivedEvent e) {
 		Component originalMessage = e.getMessage();
-		Component newMessage = BeautifulChatEvent.onClientChat(e.getBoundChatType().chatType(), e.getMessage(), e.getSender());
+		Component newMessage = BeautifulChatEvent.onClientChat(null, e.getMessage(), e.getSender());
 		
 		if (originalMessage != newMessage) {
 			e.setMessage(newMessage);
