@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "beautifiedchatclient",
+  "version": "2.6",
+
+  "name": "Beautified Chat Client",
+  "description": "A highly configurable mod to change the style and colour of incoming chat messages on the client.",
+  "authors": [ "Rick South" ],
+  "contact": {
+    "homepage": "https://serilum.com/mod/beautified-chat-client",
+    "sources": "https://github.com/Serilum/Beautified-Chat-Client",
+    "issues": "https://github.com/Serilum/.issue-tracker/labels/Mod:%20Beautified%20Chat%20Client"
+  },
+
+  "license": "All Right Reserved",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": { "main": [ "com.natamus.beautifiedchatclient.ModFabric" ], "client": [ "com.natamus.beautifiedchatclient.ModFabricClient" ], "modmenu": [ "com.natamus.beautifiedchatclient.fabric.config.IntegrateModMenu" ] },
+
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric": "*",
+    "minecraft": ">=1.21",
+    "java": ">=21",
+    "collective": ">=7.86"
+  },
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "Donate <3" : "https://ricksouth.com/donate"
+      }
+    }
+  },
+
+  "contributors": [
+	  " ",
+	  "Thank you very much to my Membership sponsors for supporting the development of this mod!",
+	  " ",
+	  "If you would like to contribute too, check out https://serilum.com/donate.",
+	  " ",
+	  "Membership sponsors:",
+	  " Alister",
+	  " Andrean Olgo",
+	  " aternosorg",
+	  " Cherriesaurus",
+	  " kate1073",
+	  " Michael W. S.",
+	  " Tyler Behl",
+	  " XAgent"
+  ]
+}
