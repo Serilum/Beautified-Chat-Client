@@ -1,6 +1,6 @@
-package com.natamus.beautifiedchatclient;
+package com.serilum.beautifiedchatclient;
 
-import com.natamus.beautifiedchatclient.config.ConfigHandler;
+import com.serilum.beautifiedchatclient.config.ConfigHandler;
 
 public class ModCommon {
 

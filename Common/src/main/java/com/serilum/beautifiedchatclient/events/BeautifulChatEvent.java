@@ -1,7 +1,7 @@
-package com.natamus.beautifiedchatclient.events;
+package com.serilum.beautifiedchatclient.events;
 
-import com.natamus.beautifiedchatclient.config.ConfigHandler;
-import com.natamus.beautifiedchatclient.util.Util;
+import com.serilum.beautifiedchatclient.config.ConfigHandler;
+import com.serilum.beautifiedchatclient.util.Util;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.ChatType;
 import net.minecraft.network.chat.Component;

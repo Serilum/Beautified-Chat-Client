@@ -1,9 +1,9 @@
-package com.natamus.beautifiedchatclient;
+package com.serilum.beautifiedchatclient;
 
-import com.natamus.beautifiedchatclient.events.BeautifulChatEvent;
+import com.serilum.beautifiedchatclient.events.BeautifulChatEvent;
 import com.natamus.collective.fabric.callbacks.CollectiveChatEvents;
 import net.fabricmc.api.ClientModInitializer;
-import com.natamus.beautifiedchatclient.util.Reference;
+import com.serilum.beautifiedchatclient.util.Reference;
 import com.natamus.collective.check.ShouldLoadCheck;
 import net.minecraft.network.chat.ChatType;
 import net.minecraft.network.chat.Component;

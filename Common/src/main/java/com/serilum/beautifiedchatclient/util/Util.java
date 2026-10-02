@@ -1,6 +1,6 @@
-package com.natamus.beautifiedchatclient.util;
+package com.serilum.beautifiedchatclient.util;
 
-import com.natamus.beautifiedchatclient.config.ConfigHandler;
+import com.serilum.beautifiedchatclient.config.ConfigHandler;
 
 import net.minecraft.ChatFormatting;
 

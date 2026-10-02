@@ -1,8 +1,8 @@
-package com.natamus.beautifiedchatclient;
+package com.serilum.beautifiedchatclient;
 
-import com.natamus.beautifiedchatclient.forge.config.IntegrateForgeConfig;
-import com.natamus.beautifiedchatclient.forge.events.ForgeBeautifulChatEvent;
-import com.natamus.beautifiedchatclient.util.Reference;
+import com.serilum.beautifiedchatclient.forge.config.IntegrateForgeConfig;
+import com.serilum.beautifiedchatclient.forge.events.ForgeBeautifulChatEvent;
+import com.serilum.beautifiedchatclient.util.Reference;
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
 import net.minecraftforge.api.distmarker.Dist;
@@ -38,7 +38,7 @@ public class ModForge {
 			return;
 		}
 
-    	MinecraftForge.EVENT_BUS.register(ForgeBeautifulChatEvent.class);
+		MinecraftForge.EVENT_BUS.register(ForgeBeautifulChatEvent.class);
 	}
 
 	private static void setGlobalConstants() {

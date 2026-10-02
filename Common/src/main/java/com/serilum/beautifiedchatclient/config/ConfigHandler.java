@@ -1,7 +1,7 @@
-package com.natamus.beautifiedchatclient.config;
+package com.serilum.beautifiedchatclient.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.beautifiedchatclient.util.Reference;
+import com.serilum.beautifiedchatclient.util.Reference;
 
 import java.util.Arrays;
 import java.util.HashMap;

@@ -1,6 +1,6 @@
-package com.natamus.beautifiedchatclient.forge.config;
+package com.serilum.beautifiedchatclient.forge.config;
 
-import com.natamus.beautifiedchatclient.util.Reference;
+import com.serilum.beautifiedchatclient.util.Reference;
 import com.natamus.collective.config.DuskConfig;
 import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.fml.ModLoadingContext;

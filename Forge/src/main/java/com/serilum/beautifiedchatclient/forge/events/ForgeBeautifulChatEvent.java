@@ -1,6 +1,6 @@
-package com.natamus.beautifiedchatclient.forge.events;
+package com.serilum.beautifiedchatclient.forge.events;
 
-import com.natamus.beautifiedchatclient.events.BeautifulChatEvent;
+import com.serilum.beautifiedchatclient.events.BeautifulChatEvent;
 import net.minecraft.network.chat.Component;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;

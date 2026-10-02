@@ -1,8 +1,8 @@
-package com.natamus.beautifiedchatclient;
+package com.serilum.beautifiedchatclient;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.beautifiedchatclient.util.Reference;
+import com.serilum.beautifiedchatclient.util.Reference;
 import net.fabricmc.api.ModInitializer;
 
 public class ModFabric implements ModInitializer {
