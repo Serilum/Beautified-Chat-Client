@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "beautifiedchatclient",
-  "version": "3.0",
+  "version": "4.0",
 
   "name": "Beautified Chat Client",
   "description": "A highly configurable mod to change the style and colour of incoming chat messages on the client.",
@@ -23,7 +23,7 @@
     "fabric-api": "*",
     "minecraft": ">=26.1",
     "java": ">=25",
-    "collective": ">=8.67"
+    "collective": ">=8.74"
   },
 
   "custom": {

@@ -14,12 +14,14 @@ public class ConfigHandler extends DuskConfig {
 	@Entry public static String timestampFormat = "HH:mm";
 	@Entry(min = 0, max = 15) public static int chatTimestampColour = 8;
 	@Entry(min = 0, max = 15) public static int chatUsernameColour = 2;
+	@Entry(min = 0, max = 15) public static int chatOtherUsernameColour = 3;
 	@Entry(min = 0, max = 15) public static int chatMessageColour = 15;
 	@Entry(min = 0, max = 15) public static int chatOtherSymbolsColour = 7;
+	@Entry public static boolean overwriteServerChatStyle = false;
 
 	public static void initConfig() {
 		configMetaData.put("chatMessageFormat", Arrays.asList(
-			"Variables: %timestamp% = timestamp set in timestampFormat. %username% = the username of the player who sent the message. %username% = the username of who sent the message."
+			"Variables: %timestamp% = timestamp set in timestampFormat. %username% = the username of the player who sent the message. %chatmessage% = the message itself. %prefix% = the text a server puts before the username, like a rank, used with overwriteServerChatStyle."
 		));
 		configMetaData.put("timestampFormat", Arrays.asList(
 			"Example time in formats: 5 seconds past 9 o' clock in the evening. *=Default. *(HH:mm) = 21:00, (HH:mm:ss) = 21:00:05, (hh:mm a) = 9:00 PM"
@@ -28,13 +30,19 @@ public class ConfigHandler extends DuskConfig {
 			"The colour of the timestamp in the chat message. The possible values are; 0: black, 1: dark_blue, 2: dark_green, 3: dark_aqua, 4: dark_red, 5: dark_purple, 6: gold, 7: gray, 8: dark_gray, 9: blue, 10: green, 11: aqua, 12: red, 13: light_purple, 14: yellow, 15: white."
 		));
 		configMetaData.put("chatUsernameColour", Arrays.asList(
-			"The colour of the username in the chat messsage. The possible values are; 0: black, 1: dark_blue, 2: dark_green, 3: dark_aqua, 4: dark_red, 5: dark_purple, 6: gold, 7: gray, 8: dark_gray, 9: blue, 10: green, 11: aqua, 12: red, 13: light_purple, 14: yellow, 15: white."
+			"The colour of your own username in the chat message. The possible values are; 0: black, 1: dark_blue, 2: dark_green, 3: dark_aqua, 4: dark_red, 5: dark_purple, 6: gold, 7: gray, 8: dark_gray, 9: blue, 10: green, 11: aqua, 12: red, 13: light_purple, 14: yellow, 15: white."
+		));
+		configMetaData.put("chatOtherUsernameColour", Arrays.asList(
+			"The colour of other players' usernames in the chat message. chatUsernameColour is used for your own. The possible values are; 0: black, 1: dark_blue, 2: dark_green, 3: dark_aqua, 4: dark_red, 5: dark_purple, 6: gold, 7: gray, 8: dark_gray, 9: blue, 10: green, 11: aqua, 12: red, 13: light_purple, 14: yellow, 15: white."
 		));
 		configMetaData.put("chatMessageColour", Arrays.asList(
 			"The colour of the chat message. The possible values are; 0: black, 1: dark_blue, 2: dark_green, 3: dark_aqua, 4: dark_red, 5: dark_purple, 6: gold, 7: gray, 8: dark_gray, 9: blue, 10: green, 11: aqua, 12: red, 13: light_purple, 14: yellow, 15: white."
 		));
 		configMetaData.put("chatOtherSymbolsColour", Arrays.asList(
 			"The colour of the other symbols from chatMessageFormat. So everything except the variables. The possible values are; 0: black, 1: dark_blue, 2: dark_green, 3: dark_aqua, 4: dark_red, 5: dark_purple, 6: gold, 7: gray, 8: dark_gray, 9: blue, 10: green, 11: aqua, 12: red, 13: light_purple, 14: yellow, 15: white."
+		));
+		configMetaData.put("overwriteServerChatStyle", Arrays.asList(
+			"Whether chat in a server's own format, like with ranks, is reformatted too, using the colours set here."
 		));
 
 		DuskConfig.init(Reference.NAME, Reference.MOD_ID, ConfigHandler.class);
