@@ -5,6 +5,7 @@ import com.natamus.collective.fabric.callbacks.CollectiveChatEvents;
 import net.fabricmc.api.ClientModInitializer;
 import com.serilum.beautifiedchatclient.util.Reference;
 import com.natamus.collective.check.ShouldLoadCheck;
+import net.fabricmc.fabric.api.client.message.v1.ClientReceiveMessageEvents;
 import net.minecraft.network.chat.ChatType;
 import net.minecraft.network.chat.Component;
 
@@ -23,6 +24,14 @@ public class ModFabricClient implements ClientModInitializer {
 	private void registerEvents() {
 		CollectiveChatEvents.CLIENT_CHAT_RECEIVED.register((ChatType type, Component message, UUID senderUUID) -> {
 			return BeautifulChatEvent.onClientChat(type, message, senderUUID);
+		});
+
+		ClientReceiveMessageEvents.MODIFY_GAME.register((Component message, boolean overlay) -> {
+			if (overlay) {
+				return message;
+			}
+
+			return BeautifulChatEvent.onClientChat(null, message, null);
 		});
 	}
 }
