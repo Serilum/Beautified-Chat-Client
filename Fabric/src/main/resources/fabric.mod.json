@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "beautifiedchatclient",
-  "version": "3.0",
+  "version": "4.0",
 
   "name": "Beautified Chat Client",
   "description": "A highly configurable mod to change the style and colour of incoming chat messages on the client.",
@@ -23,13 +23,13 @@
     "fabric-api": "*",
     "minecraft": ">=26.3",
     "java": ">=25",
-    "collective": ">=8.40"
+    "collective": ">=8.74"
   },
 
   "custom": {
     "modmenu": {
       "links": {
-        "Donate <3" : "https://serilum.com/donate"
+        "❤ Patreon" : "https://link.serilum.com/patreon"
       }
     }
   },
@@ -41,7 +41,6 @@
 	  "If you would like to contribute too, check out https://serilum.com/donate",
 	  " ",
 	  "Membership sponsors:",
-	  " Andrean Olgo",
 	  " AnyankaT",
 	  " aternosorg",
 	  " Cherriesaurus",
